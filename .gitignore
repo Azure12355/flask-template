@@ -1,0 +1,65 @@
+# PyCharm 项目文件
+.idea/
+*.iml
+
+# Python 虚拟环境
+venv/
+env/
+.venv/
+ENV/
+
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask 特定文件
+instance/
+*.db  # SQLite 数据库文件（如果使用 SQLite）
+*.sqlite
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件和缓存
+*.tmp
+*.bak
+*.swp
+*~
+.pytest_cache/
+.cache/
+
+# 依赖管理
+Pipfile.lock
+requirements.txt.bak
+
+# 打包和构建文件
+dist/
+build/
+*.egg-info/
+*.egg
+
+# 操作系统生成的文件
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# 测试覆盖率文件
+.coverage
+coverage.xml
+htmlcov/
+
+# 其他可能的文件
+*.pid
+*.seed
+*.pid.lock
+
+# 如果使用 Docker（可选）
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# 敏感信息（可选）
+.env
+secrets.yml
+application-secret.yml
