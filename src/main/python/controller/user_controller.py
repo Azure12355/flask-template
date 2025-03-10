@@ -7,4 +7,4 @@ user_bp = Blueprint('user', __name__, url_prefix='/users')
 @user_bp.route('/', methods=['GET'])
 def get_users():
     users = UserService().get_all_users()
-    return jsonify(ResultUtils.success(users).to_dict())
+    return ResultUtils.success(users)
